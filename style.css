@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: midnightblue;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+.hero {
+  text-align: center;
+  padding: 36px 20px 30px;
+  background: navy;
+  border-bottom: 5px solid gold;
+}
+
+.eyebrow {
+  color: lightblue;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+h1, h2 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+  margin: 8px 0;
+  color: gold;
+  font-size: clamp(2.4rem, 7vw, 4.5rem);
+}
+
+.tagline {
+  color: lightcyan;
+  font-size: 1.2rem;
+}
+
+.hero-image {
+  display: block;
+  width: min(100%, 420px);
+  margin: 24px auto;
+  border: 3px solid gold;
+  border-radius: 18px;
+  transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 24px gold;
+}
+
+.identity {
+  color: lightblue;
+}
+
+.content {
+  width: min(100% - 32px, 900px);
+  margin: 28px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+
+.panel {
+  padding: 22px;
+  border: 1px solid steelblue;
+  border-radius: 14px;
+  background: darkslateblue;
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: gold;
+  border-bottom: 1px solid steelblue;
+  padding-bottom: 8px;
+}
+
+.origin {
+  grid-column: 1 / -1;
+  background: midnightblue;
+}
+
+.powers {
+  background: darkslateblue;
+}
+
+.weaknesses {
+  background: #20294f;
+}
+
+.stats {
+  background: #162f46;
+}
+
+li {
+  margin: 8px 0;
+}
+
+dl {
+  margin: 0;
+}
+
+dl div {
+  display: flex;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid steelblue;
+}
+
+dt {
+  min-width: 110px;
+  color: lightblue;
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: lightblue;
+  background: navy;
+}
